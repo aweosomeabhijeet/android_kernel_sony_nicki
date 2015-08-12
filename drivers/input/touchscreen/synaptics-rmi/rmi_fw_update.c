@@ -860,7 +860,7 @@ static int fwu_do_reflash(void)
 static int fwu_start_reflash(void)
 {
 	int retval;
-	struct image_header header;
+	/* struct image_header header;
 	const unsigned char *fw_image;
 	const struct firmware *fw_entry = NULL;
 	struct f01_device_status f01_device_status;
@@ -933,7 +933,8 @@ static int fwu_start_reflash(void)
 		release_firmware(fw_entry);
 
 	pr_notice("%s: End of reflash process\n", __func__);
-exit:
+exit: */
+	retval=0;
 	return retval;
 }
 
